@@ -1,0 +1,177 @@
+body {
+    font: normal 15px Arial;
+    margin: 0;
+    background: rgb(104, 102, 102);
+}
+
+.container-corpo {
+    width: 75%;
+    margin: 0 auto;
+    background: rgb(236, 231, 231);
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    color: rgb(144, 136, 136);
+    background: rgb(53, 50, 50);
+    margin: 0;
+    width: 100%;
+    padding: 1px;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 60%;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: 0.6s all;
+}
+
+header h1:hover {
+    color: white;
+    font-size: 21px;
+}
+
+header #botao-menu {
+    border: 0;
+    font-size: 30px;
+    position: relative;
+    top: -21px;
+    left: 40px;
+    color: white;
+    background: none;
+    transition: 0.9s all; 
+}
+
+
+header #botao-menu:hover {
+    transform: rotate(180deg);
+}
+
+header #botao-menu:hover span {
+    transform: scale(1.2, 1.2);
+}
+
+.menu-opcoes {
+    position: absolute;
+    top: 75px;
+    left: 220px;
+    z-index: 1;
+    color: green;
+    background: rgb(229, 226, 226);
+    visibility: hidden;
+    box-shadow: 5px 5px 5px rgba(54, 52, 52, 0.3);
+}
+
+.menu-opcoes .linha-menu {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(229, 226, 226);
+    color: rgb(58, 52, 52);
+    transition: 0.6s all;
+}
+
+.menu-opcoes .linha-menu a {
+    color: rgb(58, 52, 52);
+    text-decoration: none;
+}
+
+.invisivel {
+    display: none;
+}
+
+#botao-menu:hover + .menu-opcoes {
+    visibility: visible;
+}
+
+.menu-opcoes:hover {
+    visibility: visible;
+}
+
+.menu-opcoes .linha-menu:hover {
+    background-color: rgb(87, 82, 82);
+}
+
+.menu-opcoes .linha-menu a:hover {
+    color: rgb(245, 237, 237);
+}
+
+main {
+    margin: 30px 0;
+}
+
+label {
+    margin-left: 25%;
+    display: block;
+}
+
+#filtro-tarefas {
+    margin-left: 25%;
+    padding: 3px 5px;
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#tabela-tarefas {
+    width: 50%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+#tabela-tarefas th {
+    color: white;
+    background: rgb(77, 74, 74);
+}
+
+#tabela-tarefas td,th {
+    border: 1px solid rgb(42, 41, 41);
+    padding: 7px;
+    width: 10%;
+}
+
+/*#tabela-tarefas .linhaDeleta {
+    border: 0;
+    background: none;
+}
+
+#tabela-tarefas th:last-child {
+    border: 0;
+    background: none;
+}
+*/
+.deletar-tarefa {
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+}
+
+.deletar-tarefa:hover {
+    color: rgb(179, 15, 15);
+}
+
+.status-nao-feito {
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: rgb(163, 163, 10);
+    margin-left: 20%;
+}
+
+.status-nao-feito:hover {
+    color: rgb(196, 196, 7);
+}
+
+.status-feito {
+    color: green;
+    margin-left: 20%;
+    border: 0;
+    font-size: 20px;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0;
+}

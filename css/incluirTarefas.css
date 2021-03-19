@@ -1,0 +1,86 @@
+body {
+    font: normal 15px Arial;
+    margin: 0;
+    background: rgb(85, 85, 172);
+}
+
+.container-corpo {
+    width: 75%;
+    margin: 0 auto;
+    background: rgb(236, 231, 231);
+}
+
+header {
+    color: rgb(144, 136, 136);
+    background: rgb(53, 50, 50);
+    margin: 0;
+    width: 100%;
+    padding: 1px;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 60%;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: 0.6s all;
+}
+
+header h1:hover {
+    color: white;
+    font-size: 21px;
+}
+
+header #botao-voltar {
+    border: 0;
+    font-size: 30px;
+    position: relative;
+    top: -21px;
+    left: 40px;
+    color: white;
+    background: none;
+    transition: 0.9s all; 
+}
+
+header #botao-voltar:hover {
+    transform: rotate(180deg);
+}
+
+header #botao-voltar:hover span {
+    transform: scale(1.2, 1.2);
+}
+
+form {
+    margin: 20px auto;
+    width: 50%;
+}
+
+#formulario-tarefa input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid rgb(73, 69, 69);
+    background:rgb(236, 231, 231);
+    transition: 0.4s all;
+}
+
+#formulario-tarefa input:hover, #formulario-tarefa input:focus {
+    background: rgb(95, 92, 92);
+    color: white;
+    padding: 6px;
+}
+
+#botao-enviar {
+    width: 50%;
+    margin: 10px 25%;
+    border: 1px solid rgb(83, 78, 78);
+    padding: 5px 0;
+    transition: 0.2s all;
+}
+
+#botao-enviar:hover {
+    background: rgb(58, 179, 58);
+    color: white;
+    font-size: 16px;
+}
